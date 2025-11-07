@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giphy Search</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Giphy Search</h1>
+    <form id="searchForm" autocomplete="off">
+      <input id="q" type="search" placeholder="Search GIFs..." required />
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <main>
+    <div id="status" role="status" aria-live="polite"></div>
+
+    <section id="outputArea" class="grid" aria-label="GIF results"></section>
+
+    <nav class="pager">
+      <button id="prevBtn">Prev</button>
+      <span id="pageInfo"></span>
+      <button id="nextBtn">Next</button>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <small>Powered by Giphy API</small>
+  </footer>
+
+  <script src="./js/main.js" defer></script>
+</body>
+</html>
+
